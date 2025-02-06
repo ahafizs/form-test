@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>Application Form</h1>
+
+    <form action="form.html" method="get">
+      <!--Name section-->
+      <label for="firstName">First Name</label>
+      <br />
+      <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        placeholder="20 letters only"
+        maxlength="20"
+      />
+      <br />
+      <label for="lastName">Last Name</label>
+      <br />
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        placeholder="20 letters only"
+        maxlength="20"
+      />
+      <br />
+
+      <!--Region section-->
+      <p>Region</p>
+
+      <input type="radio" id="asia" name="region" />
+      <label for="asia">Asia</label>
+
+      <input type="radio" id="europe" name="region" />
+      <label for="europe">Europe</label>
+
+      <input type="radio" id="northAmerica" name="region" />
+      <label for="northAmerica">North America</label>
+
+      <input type="radio" id="southAmerica" name="region" />
+      <label for="southAmerica">South America</label>
+
+      <input type="radio" id="africa" name="region" />
+      <label for="africa">Africa</label>
+
+      <br />
+
+      <!--Coding Class Section-->
+      <p>Coding Class</p>
+
+      <input type="checkbox" id="js" name="codingClass" />
+      <label for="js">Javascript</label>
+
+      <input type="checkbox" id="python" name="codingClass" />
+      <label for="python">Python</label>
+
+      <input type="checkbox" id="html" name="codingClass" />
+      <label for="html">HTML/CSS</label>
+
+      <br />
+      <br />
+
+      <label for="codingExperience">Your coding experiences</label>
+      <select id="codingExperience" name="codingExperience">
+        <option value="noExperiences">No Experiences</option>
+        <option value="someoExperiences">Some Experiences</option>
+        <option value="extensiveExperiences">Extensive Experiences</option>
+      </select>
+
+      <br />
+
+      <!--Additional Comments Section-->
+      <p>Any other comments for your application</p>
+      <textarea name="additionalComments" rows="10" cols="30"></textarea>
+      <br />
+      <!--Submit button-->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
